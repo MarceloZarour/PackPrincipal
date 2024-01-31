@@ -1,31 +1,21 @@
 <html lang="pt-BR">
 <head>
     <script>
-  fbq('track', 'Purchase');
-</script><script>
-  fbq('track', 'Purchase');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pack Principal</title>
-    
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1633737083831064');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1633737083831064&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1633737083831064');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1633737083831064&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
     <style>
         body {
@@ -80,7 +70,6 @@ src="https://www.facebook.com/tr?id=1633737083831064&ev=PageView&noscript=1"
     </style>
 </head>
 <body>
-
     <div id="imagemContainer">
         <!-- Substitua o caminho_da_imagem pelo caminho da sua imagem -->
         <img src="/assets/366449989_125519540584011_9183943042189815951_n.jpg" alt="Minha Imagem">
@@ -91,10 +80,12 @@ src="https://www.facebook.com/tr?id=1633737083831064&ev=PageView&noscript=1"
     <!-- Substitua 'seu_link_aqui' pelo link desejado -->
     <a id="linkBotao" href="https://drive.google.com/drive/folders/1Pjk19cnEMpNMFioGy2inyM9hxMYYs-0K?usp=drive_link" target="_blank">ACESSE O CONTEÚDO!</a>
 
-    <!-- Evento de clique para o Pixel do Facebook -->
+    <!-- Evento de clique para o Pixel do Facebook com valor de R$11,00 -->
     <script>
-      fbq('track', 'Purchase');
+        fbq('track', 'Purchase', {
+            value: 11.00,   // Substitua pelo valor real da compra
+            currency: 'BRL' // Substitua pela moeda real da transação
+        });
     </script>
-
 </body>
 </html>
