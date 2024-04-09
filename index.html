@@ -1,46 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+<head>
+   <title>Acesso Mobile</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+       body {
+           background-color: #0a192f; /* Azul marinho forte puxado para o roxo escuro */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+           font-family: Arial, sans-serif;
+       }
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link data-optimized="1" rel="stylesheet" href="assets/css/5921624bf5bbe4c8c091ef09226fa76f.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com/">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link data-optimized="1" href="assets/css/1c7a3d2ee9759dc256d915300855c494.css" rel="stylesheet">
-        <link data-optimized="1" href="assets/css/ba9cbbe9240a489628be8eb27c56db8a.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/animated.css">
-        <link rel="shortcut icon" href="assets/images/faveicon.png" />
-        <title>:: Cupom da Vez ::</title>
-    </head>
+       .container {
+           text-align: center;
+       }
 
-    <body class="fundo1" onLoad="setTimeout('redirectTime()', 3000)">
+       .circle {
+           width: 200px;
+           height: 200px;
+           border-radius: 50%;
+           border: 4px solid #008000; /* Verde para o contorno */
+           overflow: hidden;
+           margin: 0 auto;
+           position: relative;
+       }
 
+       .circle img {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+       }
 
+       .button {
+           margin-top: 20px;
+       }
 
-        <div style="width: 60%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" id="p1">
-       
-            <img style="position: absolute; left: 0;" src="assets/images/logo.png" />
-
-            <div style="display: flex; margin-top: 60px; justify-content: space-evenly;">
-                <h1 class="loading" style="width: 20px; height: 20px;"></h1>
-                <h1 class="carregandoCodigo">CARREGANDO...</h1>
-            </div>
-
-        </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="assets/js/funcoes.js"></script>
-        <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool' url='https://google.com.br'></script>
-        <script>
-            // REDIRECIONAMENTO LOADING
-            function redirectTime(){
-                window.location = "inicio.php"
-            }
-            // REDIRECIONAMENTO LOADING
-        </script>
-
-    </body>
+       .button a {
+           display: inline-block;
+           padding: 10px 20px;
+           background-color: #008000;
+           color: #ffffff;
+           text-decoration: none;
+           border-radius: 5px;
+           font-weight: bold;
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+       <div class="circle">
+           <img src="sua-foto.jpg" alt="Foto">
+       </div>
+       <div class="button">
+           <a href="<!-- Insira o link aqui -->">Clique aqui para ter acesso</a>
+       </div>
+   </div>
+</body>
 </html>
